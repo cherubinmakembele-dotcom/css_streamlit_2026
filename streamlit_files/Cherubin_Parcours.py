@@ -152,7 +152,7 @@ if menu == "Profile":
     st.write(
     "I’m naturally curious and like exploring ideas across different fields, "
     "especially when they connect abstract thinking with the real world."
-    "More importantly, I learn fun facts backed by sciences for when I am a cool dad and a gramps 😎")
+    " More importantly, I learn fun facts backed by sciences for when I am a cool dad and a gramps 😎")
 
     st.write(
     "On the side, I am a Jiu-Jitsu Hobbyist that competes from times to times "
@@ -651,4 +651,5 @@ elif menu == "Contact":
         )
 
     st.info("Use the sidebar to navigate to other pages.")
+
 
