@@ -152,11 +152,11 @@ if menu == "Profile":
     st.write(
     "I’m naturally curious and like exploring ideas across different fields, "
     "especially when they connect abstract thinking with the real world."
-    " More importantly, I learn fun facts backed by sciences for when I am a cool dad and a gramps 😎")
+    "More importantly ust learn fun facts backed by sciences for when I am a cool dad and/or gramps 😎")
 
     st.write(
     "On the side, I am a Jiu-Jitsu Hobbyist that competes from times to times "
-    "and I like football so naturally I play regularly")
+    "and I like football so naturally I play regulartly")
 
 
     BASE_DIR = Path(__file__).parent
@@ -214,9 +214,9 @@ elif menu == "Projects":
         "📄 Advanced Diploma Machine Learning Project": "files/advanced_diploma_ml_project.pdf",
         "📄 Biomathematics Bifurcation Analysis": "files/Biomathematics_bifurcation_analysis.pdf"
     }
-    
-        for label, rel_path in projects.items():
-        file_path = BASE_DIR / rel_path
+
+    for label, path in projects.items():
+        file_path = Path(path)
         if file_path.exists():
             st.download_button(
                 label=label,
@@ -651,7 +651,3 @@ elif menu == "Contact":
         )
 
     st.info("Use the sidebar to navigate to other pages.")
-
-
-
-
