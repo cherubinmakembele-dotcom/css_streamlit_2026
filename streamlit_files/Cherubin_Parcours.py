@@ -152,11 +152,11 @@ if menu == "Profile":
     st.write(
     "I’m naturally curious and like exploring ideas across different fields, "
     "especially when they connect abstract thinking with the real world."
-    "More importantly ust learn fun facts backed by sciences for when I am a cool dad and/or gramps 😎")
+    " More importantly ust learn fun facts backed by sciences for when I am a cool dad and a gramps 😎")
 
     st.write(
-    "On the side, I am a Jiu-Jitsu Hobbyist that competes from times to times "
-    "and I like football so naturally I play regulartly")
+    "On the side, I am a Jiu-Jitsu hobbyist who competes from times to times "
+    "and I like football so naturally I play regularly")
 
 
     BASE_DIR = Path(__file__).parent
@@ -651,3 +651,4 @@ elif menu == "Contact":
         )
 
     st.info("Use the sidebar to navigate to other pages.")
+
