@@ -214,18 +214,18 @@ elif menu == "Projects":
         "📄 Advanced Diploma Machine Learning Project": "files/advanced_diploma_ml_project.pdf",
         "📄 Biomathematics Bifurcation Analysis": "files/Biomathematics_bifurcation_analysis.pdf"
     }
-
-    for label, rel_path in projects.items():
-    file_path = BASE_DIR / rel_path
-    if file_path.exists():
-        st.download_button(
-            label=label,
-            data=file_path.read_bytes(),
-            file_name=file_path.name,
-            mime="application/pdf"
-        )
-    else:
-        st.warning(f"{label} not available.")
+    
+        for label, rel_path in projects.items():
+        file_path = BASE_DIR / rel_path
+        if file_path.exists():
+            st.download_button(
+                label=label,
+                data=file_path.read_bytes(),
+                file_name=file_path.name,
+                mime="application/pdf"
+            )
+        else:
+            st.warning(f"{label} not available.")
 
 
 # ------------------------Interactive codes--------------------------
@@ -651,6 +651,7 @@ elif menu == "Contact":
         )
 
     st.info("Use the sidebar to navigate to other pages.")
+
 
 
 
