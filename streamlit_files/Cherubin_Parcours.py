@@ -209,11 +209,12 @@ elif menu == "Projects":
     )
 
     projects = {
-        "📄 Honours Project": "files/honours_project.pdf",
-        "📄 Survival Analysis Project": "files/Survival_Analysis_project.pdf",
-        "📄 Advanced Diploma Machine Learning Project": "files/advanced_diploma_ml_project.pdf",
-        "📄 Biomathematics Bifurcation Analysis": "files/Biomathematics_bifurcation_analysis.pdf"
-    }
+    "📄 Honours Project": "streamlit_files/files/honours_project.pdf",
+    "📄 Survival Analysis Project": "streamlit_files/files/Survival_Analysis_project.pdf",
+    "📄 Advanced Diploma Machine Learning Project": "streamlit_files/files/advanced_diploma_ml_project.pdf",
+    "📄 Biomathematics Bifurcation Analysis": "streamlit_files/files/Biomathematics_bifurcation_analysis.pdf"
+}
+
 
     for label, path in projects.items():
         file_path = Path(path)
@@ -651,4 +652,5 @@ elif menu == "Contact":
         )
 
     st.info("Use the sidebar to navigate to other pages.")
+
 
